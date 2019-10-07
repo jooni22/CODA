@@ -37,17 +37,11 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 ``sudo chmod a+x teardown.sh``
 
-### Bootstrap Coda
+### Start Coda
 
-``./set-up-cluster.sh``
+``docker-compose up -d``
 
-This script:
-
-* builds the containers and runs them
-
-* installs OpsDirector
-
-Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and dev1.local on the second.
+Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
 Install OpsDirector on opsdirector.local
 ``docker cp OpsDirector/gradle.properties opsdirector.local:/opt/opsdirector-2.0.1/``
@@ -93,8 +87,5 @@ A bash session on any of the containers can be started (on your local machine) w
 | dev1.local        | http://localhost:18001      | http://localhost:18000         |
 | dev2.local        | http://localhost:28001      | http://localhost:28000         |
 | dev3.local        | http://localhost:38001      | http://localhost:38000         |
-| prod1.local       | http://localhost:48001      | http://localhost:48000         |
-| prod2.local       | http://localhost:58001      | http://localhost:58000         |
-| prod3.local       | http://localhost:51001      | http://localhost:51000         |
 | opsdirector.local | http://localhost:52001      | http://localhost:52000         |
 
