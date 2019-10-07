@@ -1,4 +1,5 @@
 FROM store/marklogicdb/marklogic-server:9.0-9-dev-centos
+USER root
 
 # Get any CentOS updates then clear the Docker cache
 RUN yum -y update && yum clean all
