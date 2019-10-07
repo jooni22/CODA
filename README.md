@@ -29,7 +29,9 @@ To run this application you will need:
 
 * [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac) 
 
-* Access to the [MarkLogic Docker Registry](https://mlregistry.marklogic.com/repositories) 
+* A [DockerHub](https://hub.docker.com/) account
+
+First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=resources) page and **proceed to checkout**. Enter your details and click **get content**.
 
 In the directory in which you copied this repo, change the permissions of the bash scripts so they're exectuable.
 

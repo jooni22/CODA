@@ -1,4 +1,4 @@
-FROM mlregistry.marklogic.com/marklogic/ml-9.0-9.1 
+FROM store/marklogicdb/marklogic-server:9.0-9-dev-centos
 
 # Get any CentOS updates then clear the Docker cache
 RUN yum -y update && yum clean all
