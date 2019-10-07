@@ -1,0 +1,104 @@
+# Multiple cluster Ops Director demo
+version: '3'
+networks:
+  marklogicCluster:
+
+services:
+# Dev #######################################################
+
+   dev1.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 17997-18010:7997-8010
+     hostname: dev1.local
+     container_name: dev1.local
+     volumes:
+      - ./volumes/dev1.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+   dev2.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 27997-28010:7997-8010
+     hostname: dev2.local
+     container_name: dev2.local
+     volumes:
+      - ./volumes/dev2.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+   dev3.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 37997-38010:7997-8010
+     hostname: dev3.local
+     container_name: dev3.local
+     volumes:
+      - ./volumes/dev3.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+#################################################################
+
+
+# Prod ##########################################################
+
+   prod1.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 47997-48010:7997-8010
+     hostname: prod1.local
+     container_name: prod1.local
+     volumes:
+      - ./volumes/prod1.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+   prod2.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 57997-58010:7997-8010
+     hostname: prod2.local
+     container_name: prod2.local
+     volumes:
+      - ./volumes/prod2.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+   prod3.local:
+     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     ports:
+       - 50997-51010:7997-8010
+     hostname: prod3.local
+     container_name: prod3.local
+     volumes:
+      - ./volumes/prod3.local/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+#################################################################
+
+
+# OpsDirector ###################################################
+
+   opsdirector.local:
+     build: ./OpsDirector
+     ports:
+       - 51997-52010:7997-8010
+     hostname: opsdirector.local
+     container_name: opsdirector.local
+     volumes:
+      - ./volumes/opsdirector/:/var/opt/MarkLogic/
+     networks:
+      - marklogicCluster
+
+#################################################################
+
+
+
+
+
+
+
+
