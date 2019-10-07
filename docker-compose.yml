@@ -7,7 +7,7 @@ services:
 # Dev #######################################################
 
    dev1.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 17997-18010:7997-8010
      hostname: dev1.local
@@ -18,7 +18,7 @@ services:
       - marklogicCluster
 
    dev2.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 27997-28010:7997-8010
      hostname: dev2.local
@@ -29,7 +29,7 @@ services:
       - marklogicCluster
 
    dev3.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 37997-38010:7997-8010
      hostname: dev3.local
@@ -45,7 +45,7 @@ services:
 # Prod ##########################################################
 
    prod1.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 47997-48010:7997-8010
      hostname: prod1.local
@@ -56,7 +56,7 @@ services:
       - marklogicCluster
 
    prod2.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 57997-58010:7997-8010
      hostname: prod2.local
@@ -67,7 +67,7 @@ services:
       - marklogicCluster
 
    prod3.local:
-     image: "mlregistry.marklogic.com/marklogic/ml-9.0-9.1"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 50997-51010:7997-8010
      hostname: prod3.local
