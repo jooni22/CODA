@@ -2,7 +2,7 @@
 
 Containerized OpsDirector Application
 
-##About
+## About
 
 Coda is development environment for testing MarkLogic clusters and OpsDirector. **It is not for production**.
 
@@ -37,7 +37,7 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 ``sudo chmod a+x teardown.sh``
 
-###Bootstrap Coda
+### Bootstrap Coda
 
 ``./set-up-cluster.sh``
 
@@ -49,15 +49,15 @@ This script:
 
 Set up *opsdirector.local*, *dev1.local* and *prod1.local* to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
-###Stop the containers
+### Stop the containers
 
 ``docker-compose stop``
 
-###Start the containers
+### Start the containers
 
 ``docker-compose start``
 
-###Teardown Coda
+### Teardown Coda
 
 ``./teardown.sh``
 
@@ -69,7 +69,7 @@ This script:
 
 * Removes the custom network (*ops-director-cluster_marklogicCluster*)
 
-##Access to the MarkLogic services
+## Access to the MarkLogic services
 
 The OpsDirector web application can be viewed from you local host at: http://localhost:52008
 
@@ -77,7 +77,7 @@ A bash session on any of the containers can be started (on your local machine) w
 
 ``docker exec -it {container name} bash``
 
-##Port mapping
+## Port mapping
 
 | Container         | View Admin on local machine | View QConsole on local machine |
 | ----------------- | --------------------------- | ------------------------------ |
