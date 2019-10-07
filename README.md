@@ -31,7 +31,9 @@ To run this application you will need:
 
 * A [DockerHub](https://hub.docker.com/) account
 
-First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=resources) page and **proceed to checkout**. Enter your details and click **get content**.
+First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=resources) page and **proceed to checkout**. Enter your details and click **get content**. 
+
+``docker pull store/marklogicdb/marklogic-server:9.0-9-dev-centos``
 
 In the directory in which you copied this repo, change the permissions of the bash scripts so they're exectuable.
 
