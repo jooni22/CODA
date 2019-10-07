@@ -1,4 +1,4 @@
-# Multiple cluster Ops Director demo
+#  Ops Director demo
 version: '3'
 networks:
   marklogicCluster:
@@ -10,7 +10,7 @@ services:
      image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      user: "root"
      ports:
-       - 17997-18010:7997-8010
+       - 7997-8010:7997-8010
      hostname: dev1.local
      container_name: dev1.local
      volumes:
@@ -44,46 +44,6 @@ services:
 
 #################################################################
 
-
-# Prod ##########################################################
-
-   prod1.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
-     user: "root"
-     ports:
-       - 47997-48010:7997-8010
-     hostname: prod1.local
-     container_name: prod1.local
-     volumes:
-      - ./volumes/prod1.local/:/var/opt/MarkLogic/
-     networks:
-      - marklogicCluster
-
-   prod2.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
-     user: "root"
-     ports:
-       - 57997-58010:7997-8010
-     hostname: prod2.local
-     container_name: prod2.local
-     volumes:
-      - ./volumes/prod2.local/:/var/opt/MarkLogic/
-     networks:
-      - marklogicCluster
-
-   prod3.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
-     user: "root"
-     ports:
-       - 50997-51010:7997-8010
-     hostname: prod3.local
-     container_name: prod3.local
-     volumes:
-      - ./volumes/prod3.local/:/var/opt/MarkLogic/
-     networks:
-      - marklogicCluster
-
-#################################################################
 
 
 # OpsDirector ###################################################

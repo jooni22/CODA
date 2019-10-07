@@ -6,7 +6,7 @@ Containerized OpsDirector Application
 
 Coda is development environment for testing MarkLogic clusters and OpsDirector. **It is not for production**.
 
-Coda uses **Docker** containers to create 3 MarkLogic clusters (Dev, Prod and OpsDirector). It uses **Docker Compose** to create and manage the containers and bash scripts to automate the containers' configuration. Docker **Volumes** are added to persist data.
+Coda uses **Docker** containers to create 2 MarkLogic clusters (Dev and OpsDirector). It uses **Docker Compose** to create and manage the containers.  Docker **Volumes** are added to persist data.
 
 This application creates the following container topology, in a custom Docker network:
 
@@ -14,10 +14,6 @@ This application creates the following container topology, in a custom Docker ne
   * dev1.local 
   * dev2.local
   * dev3.local
-* A MarkLogic **prod** cluster
-  * prod1.local
-  * prod2.local
-  * prod3.local
 * A MarkLogic single-node **OpsDirector** cluster
   * opsdirector.local
 
@@ -47,11 +43,20 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 This script:
 
-* builds the containers, runs them and then links the MarkLogic instances on them into clusters
+* builds the containers and runs them
 
 * installs OpsDirector
 
-Set up *opsdirector.local*, *dev1.local* and *prod1.local* to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
+Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and dev1.local on the second.
+
+Install OpsDirector on opsdirector.local
+``docker cp OpsDirector/gradle.properties opsdirector.local:/opt/opsdirector-2.0.1/``
+``docker exec -it opsdirector.local``
+`` cd /opt/opsdirector-2.0.1/``
+Add your credentials to gradle.properties and then run:
+``./gradlew mlDeploy``
+
+Then set up *opsdirector.local*, *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
 ### Stop the containers
 
@@ -87,9 +92,9 @@ A bash session on any of the containers can be started (on your local machine) w
 | ----------------- | --------------------------- | ------------------------------ |
 | dev1.local        | http://localhost:18001      | http://localhost:18000         |
 | dev2.local        | http://localhost:28001      | http://localhost:28000         |
-| dev2.local        | http://localhost:38001      | http://localhost:38000         |
+| dev3.local        | http://localhost:38001      | http://localhost:38000         |
 | prod1.local       | http://localhost:48001      | http://localhost:48000         |
 | prod2.local       | http://localhost:58001      | http://localhost:58000         |
-| prod3.local       | http://localhost:51011      | http://localhost:68000         |
-| opsdirector.local | http://localhost:52011      | http://localhost:78100         |
+| prod3.local       | http://localhost:51001      | http://localhost:51000         |
+| opsdirector.local | http://localhost:52001      | http://localhost:52000         |
 
