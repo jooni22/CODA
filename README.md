@@ -44,13 +44,18 @@ In the directory in which you copied this repo, change the permissions of the ba
 Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
 Install OpsDirector on opsdirector.local
+
 ``docker cp OpsDirector/gradle.properties opsdirector.local:/opt/opsdirector-2.0.1/``
+
 ``docker exec -it opsdirector.local``
+
 `` cd /opt/opsdirector-2.0.1/``
+
 Add your credentials to gradle.properties and then run:
+
 ``./gradlew mlDeploy``
 
-Then set up *opsdirector.local*, *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
+Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
 ### Stop the containers
 
