@@ -33,8 +33,6 @@ First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=res
 
 In the directory in which you copied this repo, change the permissions of the bash scripts so they're exectuable.
 
-``sudo chmod a+x set-up-cluster.sh``
-
 ``sudo chmod a+x teardown.sh``
 
 ### Start Coda
