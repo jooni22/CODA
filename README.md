@@ -33,8 +33,6 @@ First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=res
 
 In the directory in which you copied this repo, change the permissions of the bash scripts so they're exectuable.
 
-``sudo chmod a+x set-up-cluster.sh``
-
 ``sudo chmod a+x teardown.sh``
 
 ### Start Coda
@@ -46,12 +44,16 @@ Run the self-install process on each node and add dev2 and dev3 to dev1's cluste
 Install OpsDirector on opsdirector.local
 
 ``docker cp OpsDirector/gradle.properties opsdirector.local:/opt/opsdirector-2.0.1/``
+
 ``docker exec -it opsdirector.local``
+
 `` cd /opt/opsdirector-2.0.1/``
+
 Add your credentials to gradle.properties and then run:
+
 ``./gradlew mlDeploy``
 
-Then set up *opsdirector.local*, *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
+Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
 ### Stop the containers
 
