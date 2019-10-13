@@ -1,2 +1,2 @@
-./volumes
-./installOpsDirector/gradle.properties
+volumes/
+gradle.properties
