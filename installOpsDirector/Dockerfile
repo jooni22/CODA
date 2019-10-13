@@ -1,4 +1,4 @@
-FROM gradle:latest
+FROM gradle:5.6 
 
 RUN wget https://developer.marklogic.com/download/binaries/opsdirector/opsdirector-2.0.1.zip 
 
