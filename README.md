@@ -39,7 +39,7 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 ### Start Coda
 
-``./setup.sh``
+``docker-compose up -d``
 
 Now, run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
