@@ -39,24 +39,23 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 ### Start Coda
 
-``docker-compose up -d``
+``./setup.sh``
 
-Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
+Now, run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
 #### Install OpsDirector on opsdirector.local
 
-Copy gradle.properties.example to gradle.properties and add the username and password you choose for the opsdirector.local instance. Then build and run the installOpsDirector service:
+Run the installOpsDirector service:
 
-``docker build -f installOpsDirector/Dockerfile -t install.ops.director . ``
+``docker run --net coda_marklogicCluster -e username=admin -e password=yourPassword install.ops.director ``
 
-``docker run --net coda_marklogicCluster install.ops.director ``
-
-Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
+Then, set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
 ### Stop the containers
 
 ``docker-compose stop``
 
+This script:
 ### Start the containers
 
 ``docker-compose start``
@@ -65,7 +64,6 @@ Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. 
 
 ``./teardown.sh``
 
-This script:
 
 * Stops and removes the containers, and removes any orphan containers
 
