@@ -47,7 +47,7 @@ Now, run the self-install process on each node and add dev2 and dev3 to dev1's c
 
 Run the installOpsDirector service:
 
-``docker run --net coda_marklogicCluster -e username=admin -e password=yourPassword install.ops.director ``
+``docker run --net coda_marklogicCluster -e username=admin -e password=yourPassword registry.gitlab.com/stuartmoorhouse/install.marklogic.ops.director ``
 
 Then, set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 
