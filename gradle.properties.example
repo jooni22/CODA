@@ -1,0 +1,56 @@
+# This file configures ml-gradle for installing Ops Director
+
+# == Host properties
+
+# Host where Ops Director should be installed
+mlHost=opsdirector.local
+mlGroupName=Default
+mlContentForestsPerHost=2
+
+# Username and password for admin access to that host
+#mlUsername=
+#mlPassword=
+
+# == Ops Director properties
+
+# An xs:dayTimeDuration specifying how long historical
+# data should be kept in the Ops Director database
+opsdirDataExpires=P60D
+
+# The following sections determine how the Ops Director
+# cluster communicates with the managed clusters.
+# Choose (only) one of the following:
+#
+# 1. Generate a new self-signed certificate
+opsdirCa=generate
+opsdirCaCountry=GB
+opsdirCaProvince=London
+opsdirCaLocality=London
+opsdirCaOrgName=MarkLogic
+opsdirCaOrgUnit=SolutionEngineering
+opsdirCaEmail=stuart.moorhouse@marklogic.com
+#
+# 2. Use externally signed certificates
+# opsdirCa=external
+#
+# 3. Use a certificate that is already installed.
+# You must find the MarkLogic ID number for the
+# certificate you wish to use.
+# opsdirCa=<certificateID>
+
+#============================================================
+# == Internal properties
+# Do not change the properties below.
+mlModulePermissions=app-user,read,app-user,execute
+opsdirVersion=2.0.1
+opsdirExcludeRoles=admin admin-builtins admin-default admin-transform
+opsdirEmailReturnName=OpsDirector Notifications (do not reply)
+opsdirEmailReturnAddress=do-not-reply@marklogic.com
+opsdirAppPort=8008
+opsdirSysPort=8009
+mlAppName=OpsDirector
+mlContentDatabaseName=OpsDirector
+mlModulesDatabaseName=OpsDirectorModules
+mlNoRestServer=true
+confirm=false
+confirmManaged=false

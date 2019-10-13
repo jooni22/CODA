@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hosts xsi:schemaLocation="http://marklogic.com/xdmp/hosts hosts.xsd" xml:lang="zxx" timestamp="15709618710433990" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://marklogic.com/xdmp/hosts">
+  <host>
+    <host-id>15302741790232583797</host-id>
+    <host-name>dev3.local</host-name>
+    <host-mode>normal</host-mode>
+    <host-mode-description/>
+    <group>7953397611993349300</group>
+    <bind-port>7999</bind-port>
+    <connect-port>7999</connect-port>
+    <foreign-bind-port>7998</foreign-bind-port>
+    <foreign-connect-port>7998</foreign-connect-port>
+    <ssl-certificate>-----BEGIN CERTIFICATE-----
+MIICzTCCAbWgAwIBAgIIFXJWPoCInt8wDQYJKoZIhvcNAQELBQAwHzEdMBsGA1UE
+AwwUMTUzMDI3NDE3OTAyMzI1ODM3OTcwHhcNMTkxMDEzMTAxNzQ3WhcNMjkxMDEw
+MTAxNzQ3WjAfMR0wGwYDVQQDDBQxNTMwMjc0MTc5MDIzMjU4Mzc5NzCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAKOUBskk91NzHbMIgGqYN931WejKCRs0
+UHpGiCCHIB3n2F3JuNZSOvm0eAA+x5yoEvSNNR845zFFc5WHe6vcPcSs6iWSvNoT
+A07i4uPXKSnAd0tq/a/yKXIHpZSPIwfjMePu7Z9P80LDREoJLB72glco2F6Q0ru8
+kLv2hSZYxKk6jOfcJo7ab6sosxRTMHnhS6u8Qwdmkr+wLY5n01sqpcPg4Za5Lt/g
+q0ssYgeZwU/ZaMcUoCHIgQLbiGQelx8BNCmLyykBfQoIrga7sOVc7cL4/tlReB0n
+vXPKLO0OJSPsgCFF9YPcscLi/2ymxMLkHPhIlkuRsVjiNYChHyes56UCAwEAAaMN
+MAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAQEAAdHqMQ4OBYnCsjFhSMuH
+0A0Bmbuc+eKavBOLY5RP+N8MV9JYm8903/iVMJ/TKv38Y307SZe8hwGgzsEm2Yq5
+SwvUVZHiCfa9iywDJAqKF41bhPUMJAIgYffVaMNC0r3LJvovAlnW8PYbAklesXhp
+E+A74c6qo9jaKjk6j6XtjtGUDP5mf2fnn/2mpdBX1hgDE5y5OAvmWzg7lQ5YxL5r
+c+7LqJ+sfVUFZzQAZTL/IeEpOiWSC5g915cdm0atxhdsnpPBfZbfycu7kXZY50B4
+s+MO798t5uKrMYOQFM9aBTK1XrGH7Ug4DOYurGYOU490D5SjEMy3vI2W9lEhkAoA
+kA==
+-----END CERTIFICATE-----
+</ssl-certificate>
+    <zone/>
+  </host>
+</hosts>

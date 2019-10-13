@@ -1,0 +1,7 @@
+172.18.0.6 - - [13/Oct/2019:10:39:34 +0000] "HEAD /v1/ping?database=OpsDirectorModules HTTP/1.1" 401 0 - "okhttp/3.9.0"
+172.18.0.6 - admin [13/Oct/2019:10:39:34 +0000] "HEAD /v1/ping?database=OpsDirectorModules HTTP/1.1" 204 0 - "okhttp/3.9.0"
+172.18.0.6 - admin [13/Oct/2019:10:39:37 +0000] "POST /v1/documents?database=OpsDirectorModules HTTP/1.1" 200 43316 - "okhttp/3.9.0"
+172.18.0.6 - - [13/Oct/2019:10:40:09 +0000] "PUT /v1/documents?category=content&category=metadata&uri=/config/opsdirector.xml&database=OpsDirector HTTP/1.1" 401 209 - "okhttp/3.9.0"
+172.18.0.6 - admin [13/Oct/2019:10:40:09 +0000] "PUT /v1/documents?category=content&category=metadata&uri=/config/opsdirector.xml&database=OpsDirector HTTP/1.1" 201 0 - "okhttp/3.9.0"
+172.18.0.6 - - [13/Oct/2019:10:40:12 +0000] "DELETE /v1/documents?category=content&uri=/app/v2/endpoints/post-install.xqy&database=OpsDirectorModules HTTP/1.1" 401 209 - "okhttp/3.9.0"
+172.18.0.6 - admin [13/Oct/2019:10:40:13 +0000] "DELETE /v1/documents?category=content&uri=/app/v2/endpoints/post-install.xqy&database=OpsDirectorModules HTTP/1.1" 204 0 - "okhttp/3.9.0"

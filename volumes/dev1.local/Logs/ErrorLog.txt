@@ -1,0 +1,225 @@
+2019-10-13 10:10:20.370 Notice: Starting MarkLogic Server 9.0-9.1 x86_64 in /opt/MarkLogic with data in /var/opt/MarkLogic
+2019-10-13 10:10:20.371 Info: MarkLogic Converters not installed
+2019-10-13 10:10:20.379 Info: Host dev1.local with 16GB memory running Linux 4.9.184-linuxkit (CentOS Linux release 7.6.1810 (Core) ) on Docker
+2019-10-13 10:10:20.848 Info: License key languages: en
+2019-10-13 10:10:20.926 Info: Using icu tokenization: ta ro tr da fi hu
+2019-10-13 10:10:20.926 Info: Using bitext stemming: en en-uc
+2019-10-13 10:10:20.926 Info: Using snowball stemming: ta ro tr da fi hu
+2019-10-13 10:10:22.392 Info: Loaded schemas, rule sets, and templates
+2019-10-13 10:10:22.480 Notice: Keystore {kms-type=internal, status=normal, dataEncryption=default-off, configEncryption=off, logsEncryption=off}
+2019-10-13 10:10:22.546 Info: Native plugin cache manifest initialized
+2019-10-13 10:10:22.652 Info: Forest Schemas state changed from unmounted to mounted
+2019-10-13 10:10:22.654 Info: Forest Security state changed from unmounted to mounted
+2019-10-13 10:10:22.655 Info: Forest Modules state changed from unmounted to mounted
+2019-10-13 10:10:22.655 Info: Forest Documents state changed from unmounted to mounted
+2019-10-13 10:10:22.657 Notice: Mounted forest Schemas locally on /var/opt/MarkLogic/Forests/Schemas read write
+2019-10-13 10:10:22.664 Notice: Mounted forest Security locally on /var/opt/MarkLogic/Forests/Security read write
+2019-10-13 10:10:22.668 Notice: Mounted forest Documents locally on /var/opt/MarkLogic/Forests/Documents read write
+2019-10-13 10:10:22.670 Notice: Mounted forest Modules locally on /var/opt/MarkLogic/Forests/Modules read write
+2019-10-13 10:10:22.677 Warning: Metering database is not configured - Temporarily disabling usage metering
+2019-10-13 10:10:22.717 Info: Forest Documents state changed from mounted to recovering
+2019-10-13 10:10:22.720 Info: Forest Schemas state changed from mounted to recovering
+2019-10-13 10:10:22.720 Info: Forest Security state changed from mounted to recovering
+2019-10-13 10:10:22.721 Info: Forest Modules state changed from mounted to recovering
+2019-10-13 10:10:22.781 Info: Forest Security forgetting previous master 0 because configured master changed
+2019-10-13 10:10:22.783 Info: Forest Documents forgetting previous master 0 because configured master changed
+2019-10-13 10:10:22.789 Info: Forest Schemas forgetting previous master 0 because configured master changed
+2019-10-13 10:10:22.814 Info: Forest Modules forgetting previous master 0 because configured master changed
+2019-10-13 10:10:22.863 Info: Forest Extensions state changed from unmounted to mounted
+2019-10-13 10:10:22.863 Info: Forest Security state changed from recovering to open
+2019-10-13 10:10:22.863 Info: Forest Fab state changed from unmounted to mounted
+2019-10-13 10:10:22.863 Info: Forest Meters state changed from unmounted to mounted
+2019-10-13 10:10:22.863 Info: Forest Documents state changed from recovering to open
+2019-10-13 10:10:22.865 Info: Forest Schemas state changed from recovering to open
+2019-10-13 10:10:22.866 Notice: Mounted forest Extensions locally on /var/opt/MarkLogic/Forests/Extensions read write
+2019-10-13 10:10:22.872 Info: Forest App-Services state changed from unmounted to mounted
+2019-10-13 10:10:22.872 Info: Forest Modules state changed from recovering to open
+2019-10-13 10:10:22.872 Notice: Mounted forest Fab locally on /var/opt/MarkLogic/Forests/Fab read write
+2019-10-13 10:10:22.877 Notice: Mounted forest Meters locally on /var/opt/MarkLogic/Forests/Meters read write
+2019-10-13 10:10:22.879 Notice: Mounted forest App-Services locally on /var/opt/MarkLogic/Forests/App-Services read write
+2019-10-13 10:10:22.981 Info: Forest Extensions state changed from mounted to recovering
+2019-10-13 10:10:23.014 Info: Database Triggers is online with 1 forest
+2019-10-13 10:10:23.023 Info: Database Meters is online with 1 forest
+2019-10-13 10:10:23.025 Info: Database Schemas is online with 1 forest
+2019-10-13 10:10:23.027 Info: Database Documents is online with 1 forest
+2019-10-13 10:10:23.029 Info: Database Security is online with 1 forest
+2019-10-13 10:10:23.032 Info: Forest App-Services state changed from mounted to recovering
+2019-10-13 10:10:23.034 Info: Forest Meters state changed from mounted to recovering
+2019-10-13 10:10:23.041 Info: Forest Fab state changed from mounted to recovering
+2019-10-13 10:10:23.052 Info: Database Modules is online with 1 forest
+2019-10-13 10:10:23.112 Info: Forest Last-Login state changed from unmounted to mounted
+2019-10-13 10:10:23.116 Info: Forest Triggers state changed from unmounted to mounted
+2019-10-13 10:10:23.118 Notice: Mounted forest Last-Login locally on /var/opt/MarkLogic/Forests/Last-Login read write
+2019-10-13 10:10:23.129 Notice: Mounted forest Triggers locally on /var/opt/MarkLogic/Forests/Triggers read write
+2019-10-13 10:10:23.143 Info: Forest Meters forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.147 Info: Forest Extensions forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.165 Info: Forest Fab forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.167 Info: Forest App-Services forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.169 Info: Forest Triggers state changed from mounted to recovering
+2019-10-13 10:10:23.172 Info: Forest Last-Login state changed from mounted to recovering
+2019-10-13 10:10:23.175 Info: Forest Meters state changed from recovering to open
+2019-10-13 10:10:23.177 Info: Forest Extensions state changed from recovering to open
+2019-10-13 10:10:23.236 Info: Forest Fab state changed from recovering to open
+2019-10-13 10:10:23.240 Info: Forest App-Services state changed from recovering to open
+2019-10-13 10:10:23.258 Info: Forest Triggers forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.258 Info: Forest Last-Login forgetting previous master 0 because configured master changed
+2019-10-13 10:10:23.317 Info: Forest Triggers state changed from recovering to open
+2019-10-13 10:10:23.326 Info: Forest Last-Login state changed from recovering to open
+2019-10-13 10:10:24.004 Info: Linux Huge Pages: detected 0, recommend 2560 to 3100
+2019-10-13 10:17:13.075 Info: Keystore: generated KEKID=cbff825f-67a4-4f96-b33e-d6d9f5b1ad5f
+2019-10-13 10:17:13.716 Info: Keystore: generated KEKID=2feea165-5489-4db0-80e2-bf325a536abf
+2019-10-13 10:17:14.218 Info: Keystore: generated KEKID=f7638cdd-fbaa-4d08-9b23-651732cbdaec
+2019-10-13 10:17:16.680 Info: Forest Meters state changed from open to start closing because shutting down
+2019-10-13 10:17:16.680 Info: Forest Meters state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.680 Info: Forest Meters state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.700 Info: Forest Meters state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.703 Info: Forest Meters state changed from mounted to unmounted
+2019-10-13 10:17:16.703 Notice: Unmounted forest Meters
+2019-10-13 10:17:16.716 Info: Forest App-Services state changed from open to start closing because shutting down
+2019-10-13 10:17:16.716 Info: Forest App-Services state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.716 Info: Forest App-Services state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.739 Info: Forest App-Services state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.745 Info: Forest App-Services state changed from mounted to unmounted
+2019-10-13 10:17:16.745 Notice: Unmounted forest App-Services
+2019-10-13 10:17:16.746 Info: Forest Fab state changed from open to start closing because shutting down
+2019-10-13 10:17:16.746 Info: Forest Fab state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.746 Info: Forest Fab state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.767 Info: Forest Fab state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.770 Info: Forest Fab state changed from mounted to unmounted
+2019-10-13 10:17:16.770 Notice: Unmounted forest Fab
+2019-10-13 10:17:16.771 Info: Forest Extensions state changed from open to start closing because shutting down
+2019-10-13 10:17:16.771 Info: Forest Extensions state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.771 Info: Forest Extensions state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.788 Info: Forest Extensions state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.789 Info: Forest Extensions state changed from mounted to unmounted
+2019-10-13 10:17:16.789 Notice: Unmounted forest Extensions
+2019-10-13 10:17:16.790 Info: Forest Security state changed from open to start closing because shutting down
+2019-10-13 10:17:16.791 Info: Database Security is offline
+2019-10-13 10:17:16.793 Info: Forest Security state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.793 Info: Forest Security state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.816 Info: Forest Security state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.818 Info: Forest Security state changed from mounted to unmounted
+2019-10-13 10:17:16.818 Notice: Unmounted forest Security
+2019-10-13 10:17:16.819 Info: Forest Modules state changed from open to start closing because shutting down
+2019-10-13 10:17:16.820 Info: Database Modules is offline
+2019-10-13 10:17:16.821 Info: Forest Modules state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.821 Info: Forest Modules state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.842 Info: Forest Modules state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.845 Info: Forest Modules state changed from mounted to unmounted
+2019-10-13 10:17:16.845 Notice: Unmounted forest Modules
+2019-10-13 10:17:16.846 Info: Forest Last-Login state changed from open to start closing because shutting down
+2019-10-13 10:17:16.846 Info: Forest Last-Login state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.846 Info: Forest Last-Login state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.864 Info: Forest Last-Login state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.867 Info: Forest Last-Login state changed from mounted to unmounted
+2019-10-13 10:17:16.867 Notice: Unmounted forest Last-Login
+2019-10-13 10:17:16.868 Info: Forest Triggers state changed from open to start closing because shutting down
+2019-10-13 10:17:16.868 Info: Forest Triggers state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.868 Info: Forest Triggers state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.884 Info: Forest Triggers state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.886 Info: Forest Triggers state changed from mounted to unmounted
+2019-10-13 10:17:16.886 Notice: Unmounted forest Triggers
+2019-10-13 10:17:16.887 Info: Forest Schemas state changed from open to start closing because shutting down
+2019-10-13 10:17:16.887 Info: Database Schemas is offline
+2019-10-13 10:17:16.889 Info: Forest Schemas state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.889 Info: Forest Schemas state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.906 Info: Forest Schemas state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.908 Info: Forest Schemas state changed from mounted to unmounted
+2019-10-13 10:17:16.908 Notice: Unmounted forest Schemas
+2019-10-13 10:17:16.909 Info: Forest Documents state changed from open to start closing because shutting down
+2019-10-13 10:17:16.909 Info: Database Documents is offline
+2019-10-13 10:17:16.910 Info: Forest Documents state changed from start closing to middle closing because shutting down
+2019-10-13 10:17:16.910 Info: Forest Documents state changed from middle closing to finish closing because shutting down
+2019-10-13 10:17:16.933 Info: Forest Documents state changed from finish closing to mounted because finished closing
+2019-10-13 10:17:16.935 Info: Forest Documents state changed from mounted to unmounted
+2019-10-13 10:17:16.935 Notice: Unmounted forest Documents
+2019-10-13 10:17:16.936 Notice: Restarting to initialize server
+2019-10-13 10:17:17.377 Notice: Starting MarkLogic Server 9.0-9.1 x86_64 in /opt/MarkLogic with data in /var/opt/MarkLogic
+2019-10-13 10:17:17.378 Info: MarkLogic Converters not installed
+2019-10-13 10:17:17.389 Info: Host dev1.local with 16GB memory running Linux 4.9.184-linuxkit (CentOS Linux release 7.6.1810 (Core) ) on Docker
+2019-10-13 10:17:17.682 Info: License key languages: en
+2019-10-13 10:17:17.770 Info: Using icu tokenization: ta ro tr da fi hu
+2019-10-13 10:17:17.770 Info: Using bitext stemming: en en-uc
+2019-10-13 10:17:17.770 Info: Using snowball stemming: ta ro tr da fi hu
+2019-10-13 10:17:19.415 Info: Loaded schemas, rule sets, and templates
+2019-10-13 10:17:19.465 Notice: Keystore {kms-type=internal, status=normal, dataEncryption=default-off, configEncryption=off, logsEncryption=off}
+2019-10-13 10:17:19.540 Info: Native plugin cache manifest initialized
+2019-10-13 10:17:19.606 Info: Forest Last-Login state changed from unmounted to mounted
+2019-10-13 10:17:19.606 Info: Forest App-Services state changed from unmounted to mounted
+2019-10-13 10:17:19.606 Info: Forest Security state changed from unmounted to mounted
+2019-10-13 10:17:19.608 Notice: Mounted forest Security locally on /var/opt/MarkLogic/Forests/Security read write
+2019-10-13 10:17:19.609 Info: Forest Meters state changed from unmounted to mounted
+2019-10-13 10:17:19.609 Notice: Mounted forest App-Services locally on /var/opt/MarkLogic/Forests/App-Services read write
+2019-10-13 10:17:19.615 Notice: Mounted forest Last-Login locally on /var/opt/MarkLogic/Forests/Last-Login read write
+2019-10-13 10:17:19.618 Notice: Mounted forest Meters locally on /var/opt/MarkLogic/Forests/Meters read write
+2019-10-13 10:17:19.638 Info: Forest Security state changed from mounted to recovering
+2019-10-13 10:17:19.642 Info: Forest Last-Login state changed from mounted to recovering
+2019-10-13 10:17:19.649 Info: Forest Meters state changed from mounted to recovering
+2019-10-13 10:17:19.649 Info: Forest App-Services state changed from mounted to recovering
+2019-10-13 10:17:19.703 Info: Forest Triggers state changed from unmounted to mounted
+2019-10-13 10:17:19.704 Info: Forest Schemas state changed from unmounted to mounted
+2019-10-13 10:17:19.705 Notice: Mounted forest Triggers locally on /var/opt/MarkLogic/Forests/Triggers read write
+2019-10-13 10:17:19.708 Notice: Mounted forest Schemas locally on /var/opt/MarkLogic/Forests/Schemas read write
+2019-10-13 10:17:19.711 Info: Forest Fab state changed from unmounted to mounted
+2019-10-13 10:17:19.719 Notice: Mounted forest Fab locally on /var/opt/MarkLogic/Forests/Fab read write
+2019-10-13 10:17:19.726 Info: Forest Documents state changed from unmounted to mounted
+2019-10-13 10:17:19.728 Notice: Mounted forest Documents locally on /var/opt/MarkLogic/Forests/Documents read write
+2019-10-13 10:17:19.756 Info: Forest Schemas state changed from mounted to recovering
+2019-10-13 10:17:19.759 Info: Forest Triggers state changed from mounted to recovering
+2019-10-13 10:17:19.766 Info: Forest Fab state changed from mounted to recovering
+2019-10-13 10:17:19.777 Info: Forest Documents state changed from mounted to recovering
+2019-10-13 10:17:19.826 Info: Forest Last-Login forgetting previous master 7828769132867801878 because configured master changed
+2019-10-13 10:17:19.828 Info: Forest App-Services forgetting previous master 11882077651433609772 because configured master changed
+2019-10-13 10:17:19.830 Info: Forest Security forgetting previous master 4169492084640107076 because configured master changed
+2019-10-13 10:17:19.845 Info: Forest Modules state changed from unmounted to mounted
+2019-10-13 10:17:19.848 Info: Forest Extensions state changed from unmounted to mounted
+2019-10-13 10:17:19.850 Notice: Mounted forest Modules locally on /var/opt/MarkLogic/Forests/Modules read write
+2019-10-13 10:17:19.853 Notice: Mounted forest Extensions locally on /var/opt/MarkLogic/Forests/Extensions read write
+2019-10-13 10:17:19.867 Info: Forest Meters forgetting previous master 12637459875812957506 because configured master changed
+2019-10-13 10:17:19.886 Info: Forest App-Services state changed from recovering to open
+2019-10-13 10:17:19.889 Info: Forest Last-Login state changed from recovering to open
+2019-10-13 10:17:19.890 Info: Forest Security state changed from recovering to open
+2019-10-13 10:17:19.909 Info: Forest Modules state changed from mounted to recovering
+2019-10-13 10:17:19.922 Info: Forest Extensions state changed from mounted to recovering
+2019-10-13 10:17:19.927 Info: Forest Meters state changed from recovering to open
+2019-10-13 10:17:19.939 Info: Forest Triggers forgetting previous master 403610742975261575 because configured master changed
+2019-10-13 10:17:19.971 Info: Forest Schemas forgetting previous master 11434747698033925031 because configured master changed
+2019-10-13 10:17:19.997 Info: Forest Fab forgetting previous master 9119808927941284866 because configured master changed
+2019-10-13 10:17:20.001 Info: Forest Triggers state changed from recovering to open
+2019-10-13 10:17:20.010 Info: Database Meters is online with 1 forest
+2019-10-13 10:17:20.010 Info: Forest Documents forgetting previous master 4070001958743909501 because configured master changed
+2019-10-13 10:17:20.012 Info: Database Security is online with 1 forest
+2019-10-13 10:17:20.021 Info: Database App-Services is online with 1 forest
+2019-10-13 10:17:20.024 Info: Database Last-Login is online with 1 forest
+2019-10-13 10:17:20.030 Info: Database Triggers is online with 1 forest
+2019-10-13 10:17:20.040 Info: Forest Schemas state changed from recovering to open
+2019-10-13 10:17:20.046 Info: Forest Documents state changed from recovering to open
+2019-10-13 10:17:20.046 Info: Forest Fab state changed from recovering to open
+2019-10-13 10:17:20.081 Info: Forest Modules forgetting previous master 663771838515944157 because configured master changed
+2019-10-13 10:17:20.093 Info: Forest Extensions forgetting previous master 5107117011859164165 because configured master changed
+2019-10-13 10:17:20.105 Info: Forest Modules state changed from recovering to open
+2019-10-13 10:17:20.114 Info: Forest Extensions state changed from recovering to open
+2019-10-13 10:17:21.022 Info: Linux Huge Pages: detected 0, recommend 2560 to 3100
+2019-10-13 10:17:21.022 Info: Database Extensions is online with 1 forest
+2019-10-13 10:17:21.025 Info: Database Modules is online with 1 forest
+2019-10-13 10:17:21.027 Info: Database Fab is online with 1 forest
+2019-10-13 10:17:21.028 Info: Database Documents is online with 1 forest
+2019-10-13 10:17:21.029 Info: Database Schemas is online with 1 forest
+2019-10-13 10:17:54.226 Info: Saving /var/opt/MarkLogic/Forests/Security/00000000
+2019-10-13 10:17:54.714 Info: Saved 1 MB at 2 MB/sec to /var/opt/MarkLogic/Forests/Security/00000000
+2019-10-13 10:17:56.616 Notice: Starting HSM token with label MarkLogic and slotId 341136944
+2019-10-13 10:17:56.617 Notice: Starting PKCS#11 Wallet with token label MarkLogic and slotId 341136944
+2019-10-13 10:17:56.618 Notice: Keystore passphrase changed
+2019-10-13 10:17:56.797 Notice: Starting HSM token with label MarkLogic and slotId 341136944
+2019-10-13 10:17:56.798 Notice: Starting PKCS#11 Wallet with token label MarkLogic and slotId 341136944
+2019-10-13 10:18:28.732 Info: Saving /var/opt/MarkLogic/Forests/Security/00000001
+2019-10-13 10:18:29.068 Info: Saved 1 MB at 3 MB/sec to /var/opt/MarkLogic/Forests/Security/00000001
+2019-10-13 10:18:29.092 Info: Merging 2 MB from /var/opt/MarkLogic/Forests/Security/00000000 and /var/opt/MarkLogic/Forests/Security/00000001 to /var/opt/MarkLogic/Forests/Security/00000002, timestamp=15709612779770041
+2019-10-13 10:18:29.760 Info: Merged 1 MB in 1 sec at 1 MB/sec to /var/opt/MarkLogic/Forests/Security/00000002
+2019-10-13 10:18:32.250 Info: Deleted 1 MB at 8 MB/sec /var/opt/MarkLogic/Forests/Security/00000000
+2019-10-13 10:18:32.408 Info: Deleted 1 MB at 7 MB/sec /var/opt/MarkLogic/Forests/Security/00000001
+2019-10-13 10:22:00.115 Info: Memory 6% phys=16024 size=1195(7%) rss=964(6%) anon=908(5%) file=1(0%) forest=843(5%) cache=5120(31%) registry=1(0%)
+2019-10-13 10:24:00.180 Info: Memory 1% phys=16024 size=541(3%) rss=309(1%) anon=254(1%) file=1(0%) forest=843(5%) cache=5120(31%) registry=1(0%)
+2019-10-13 10:29:01.694 Info: Merging 1 MB from /var/opt/MarkLogic/Forests/Security/00000002 to /var/opt/MarkLogic/Forests/Security/00000003, timestamp=15709619400662590
+2019-10-13 10:29:02.464 Info: Merged 1 MB in 1 sec at 1 MB/sec to /var/opt/MarkLogic/Forests/Security/00000003
+2019-10-13 10:29:05.238 Info: Deleted 1 MB at 7 MB/sec /var/opt/MarkLogic/Forests/Security/00000002
