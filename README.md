@@ -4,7 +4,7 @@ Containerized OpsDirector Application
 
 ## About
 
-Coda is development environment for testing MarkLogic clusters and OpsDirector. **It is not for production**.
+Coda is a development environment for testing MarkLogic clusters and OpsDirector. **It is not for production**.
 
 Coda uses **Docker** containers to create 2 MarkLogic clusters (Dev and OpsDirector). It uses **Docker Compose** to create and manage the containers.  Docker **Volumes** are added to persist data.
 
