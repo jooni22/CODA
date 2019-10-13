@@ -16,6 +16,8 @@ This application creates the following container topology, in a custom Docker ne
   * dev3.local
 * A MarkLogic single-node **OpsDirector** cluster
   * opsdirector.local
+  
+It also uses an installOpsDirector Gradle service separately from the docker-compose stack.
 
 ## Running Coda
 
@@ -41,11 +43,12 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 Run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
-Install OpsDirector on opsdirector.local
+#### Install OpsDirector on opsdirector.local
 
 Copy gradle.properties.example to gradle.properties and add the username and password you choose for the opsdirector.local instance. Then build and run the installOpsDirector service:
 
 ``docker build -f installOpsDirector/Dockerfile -t install.ops.director . ``
+
 ``docker run --net coda_marklogicCluster install.ops.director ``
 
 Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
@@ -68,7 +71,7 @@ This script:
 
 * Removes the contents of  /volumes 
 
-* Removes the custom network (*ops-director-cluster_marklogicCluster*)
+* Removes the custom network (*coda_marklogicCluster*)
 
 ## Access to the MarkLogic services
 
