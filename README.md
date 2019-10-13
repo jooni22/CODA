@@ -43,10 +43,10 @@ Run the self-install process on each node and add dev2 and dev3 to dev1's cluste
 
 Install OpsDirector on opsdirector.local
 
-Add your credentials to installOpsDirector/gradle.properties and then build and run the image:
+Copy gradle.properties.example to gradle.properties and add the username and password you choose for the opsdirector.local instance. Then build and run the installOpsDirector service:
 
-``docker build -f installOpsDirector/Dockerfile -t installOpsDirector ``
-``docker run -d installOsDirector --net marklogicCluster``
+``docker build -f installOpsDirector/Dockerfile -t install.ops.director . ``
+``docker run --net coda_marklogicCluster install.ops.director ``
 
 Then set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector. See https://docs.marklogic.com/guide/opsdir/GettingStarted
 

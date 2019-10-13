@@ -49,7 +49,7 @@ services:
 # OpsDirector ###################################################
 
    opsdirector.local:
-     build: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
+     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
      ports:
        - 51997-52010:7997-8010
      hostname: opsdirector.local
