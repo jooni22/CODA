@@ -55,7 +55,6 @@ Then, set up *opsdirector.local* and *dev1.local*  to be managed by OpsDirector.
 
 ``docker-compose stop``
 
-This script:
 ### Start the containers
 
 ``docker-compose start``
