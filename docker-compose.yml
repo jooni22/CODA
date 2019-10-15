@@ -33,7 +33,7 @@ services:
      environment:
         - MARKLOGIC_INIT=true
         - MARKLOGIC_JOIN_CLUSTER=true
-        - MARKLOGIC_BOOTSTRAP=dev1.local
+        - MARKLOGIC_BOOTSTRAP=http://localhost:18001/
         - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
         - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
         - TZ=Europe/Prague
@@ -54,7 +54,7 @@ services:
      environment:
         - MARKLOGIC_INIT=true
         - MARKLOGIC_JOIN_CLUSTER=true
-        - MARKLOGIC_BOOTSTRAP=dev1.local
+        - MARKLOGIC_BOOTSTRAP=http://localhost:18001/
         - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
         - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
         - TZ=Europe/Prague
