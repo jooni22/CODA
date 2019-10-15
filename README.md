@@ -30,7 +30,7 @@ To run this application you will need:
 
 * A [DockerHub](https://hub.docker.com/) account
 
-First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=resources) page and **proceed to checkout**. Enter your details and click **get content**. 
+First, got to MarkLogic's [DockerHub](https://hub.docker.com/_/marklogic?tab=resources) page and **proceed to checkout**. Enter your details and click **get content**. Choose the version of MarkLogic server you want to use.
 
 ``docker pull store/marklogicdb/marklogic-server:9.0-9-dev-centos``
 
@@ -38,11 +38,17 @@ In the directory in which you copied this repo, change the permissions of the ba
 
 ``sudo chmod a+x teardown.sh``
 
+Create a .env file containing
+
+```
+ML_VERSION=yourVersion
+ADMIN=yourAdminUserName
+PASSWORD=yourAdminPassword
+```
+
 ### Start Coda
 
 ``docker-compose up -d``
-
-Now, run the self-install process on each node and add dev2 and dev3 to dev1's cluster. Choose "localhost" as the hostname on the first screen and "dev1.local" on the second.
 
 #### Install OpsDirector on opsdirector.local
 

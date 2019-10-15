@@ -13,6 +13,11 @@ services:
        - 7997-8010:7997-8010
      hostname: dev1.local
      container_name: dev1.local
+     environment:
+        - MARKLOGIC_INIT=true
+        - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
+        - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
+        - TZ=Europe/Prague
      volumes:
       - ./volumes/dev1.local/:/var/opt/MarkLogic/
      networks:
@@ -25,6 +30,13 @@ services:
        - 27997-28010:7997-8010
      hostname: dev2.local
      container_name: dev2.local
+     environment:
+        - MARKLOGIC_INIT=true
+        - MARKLOGIC_JOIN_CLUSTER=true
+        - MARKLOGIC_BOOTSTRAP=dev1.local
+        - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
+        - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
+        - TZ=Europe/Prague
      volumes:
       - ./volumes/dev2.local/:/var/opt/MarkLogic/
      networks:
@@ -37,6 +49,13 @@ services:
        - 37997-38010:7997-8010
      hostname: dev3.local
      container_name: dev3.local
+     environment:
+        - MARKLOGIC_INIT=true
+        - MARKLOGIC_JOIN_CLUSTER=true
+        - MARKLOGIC_BOOTSTRAP=dev1.local
+        - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
+        - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
+        - TZ=Europe/Prague
      volumes:
       - ./volumes/dev3.local/:/var/opt/MarkLogic/
      networks:
@@ -54,6 +73,11 @@ services:
        - 51997-52010:7997-8010
      hostname: opsdirector.local
      container_name: opsdirector.local
+     environment:
+        - MARKLOGIC_INIT=true
+        - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
+        - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
+        - TZ=Europe/Prague
      volumes:
       - ./volumes/opsdirector/:/var/opt/MarkLogic/
      networks:
