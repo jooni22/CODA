@@ -10,7 +10,7 @@ services:
      image: store/marklogicdb/marklogic-server:${ML_VERSION}
      user: "root"
      ports:
-       - 7997-8010:7997-8010
+       - 17997-18010:7997-8010
      hostname: dev1.local
      container_name: dev1.local
      environment:
@@ -37,10 +37,12 @@ services:
         - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
         - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
         - TZ=Europe/Prague
+     depends_on:
+        - dev1.local
      volumes:
-      - ./volumes/dev2.local/:/var/opt/MarkLogic/
+       - ./volumes/dev2.local/:/var/opt/MarkLogic/
      networks:
-      - marklogicCluster
+       - marklogicCluster
 
    dev3.local:
      image: store/marklogicdb/marklogic-server:${ML_VERSION}
@@ -56,6 +58,8 @@ services:
         - MARKLOGIC_ADMIN_USERNAME=${ADMIN}
         - MARKLOGIC_ADMIN_PASSWORD=${PASSWORD}
         - TZ=Europe/Prague
+     depends_on:
+        - dev1.local
      volumes:
       - ./volumes/dev3.local/:/var/opt/MarkLogic/
      networks:
@@ -84,11 +88,3 @@ services:
       - marklogicCluster
 
 #################################################################
-
-
-
-
-
-
-
-
