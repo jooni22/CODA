@@ -7,7 +7,7 @@ services:
 # Dev #######################################################
 
    dev1.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
+     image: store/marklogicdb/marklogic-server:${ML_VERSION}
      user: "root"
      ports:
        - 7997-8010:7997-8010
@@ -19,7 +19,7 @@ services:
       - marklogicCluster
 
    dev2.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
+     image: store/marklogicdb/marklogic-server:${ML_VERSION}
      user: "root"
      ports:
        - 27997-28010:7997-8010
@@ -31,7 +31,7 @@ services:
       - marklogicCluster
 
    dev3.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
+     image: store/marklogicdb/marklogic-server:${ML_VERSION}
      user: "root"
      ports:
        - 37997-38010:7997-8010
@@ -49,7 +49,7 @@ services:
 # OpsDirector ###################################################
 
    opsdirector.local:
-     image: "store/marklogicdb/marklogic-server:9.0-9-dev-centos"
+     image: store/marklogicdb/marklogic-server:${ML_VERSION}
      ports:
        - 51997-52010:7997-8010
      hostname: opsdirector.local

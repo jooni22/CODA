@@ -17,6 +17,7 @@ This application creates the following container topology, in a custom Docker ne
 * A MarkLogic single-node **OpsDirector** cluster
   * opsdirector.local
   
+
 It also uses an installOpsDirector Gradle service separately from the docker-compose stack.
 
 ## Running Coda
@@ -82,7 +83,7 @@ A bash session on any of the containers can be started (on your local machine) w
 
 | Container         | View Admin on local machine | View QConsole on local machine |
 | ----------------- | --------------------------- | ------------------------------ |
-| dev1.local        | http://localhost:18001      | http://localhost:18000         |
+| dev1.local        | http://localhost:8001       | http://localhost:8000          |
 | dev2.local        | http://localhost:28001      | http://localhost:28000         |
 | dev3.local        | http://localhost:38001      | http://localhost:38000         |
 | opsdirector.local | http://localhost:52001      | http://localhost:52000         |
